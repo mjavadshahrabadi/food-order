@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Vazir", sans-serif;
+  }
+}
+
+@layer components {
+  .orange__hover {
+    @apply text-[#ff8e28] transition-all duration-200 ease-out cursor-pointer;
+  }
+}
