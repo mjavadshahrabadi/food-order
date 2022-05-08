@@ -37,7 +37,7 @@ const Navbar = () => {
         </li>
       </ul>
       <div className="cursor-pointer flex items-center">
-        <p className="ml-4 text-sm mt-1">لوگو</p>
+        {/* <p className="ml-4 text-sm mt-1">لوگو</p> */}
         <div className="w-[48px] h-[48px] relative">
           <Image
             src="/images/logo_white.png"

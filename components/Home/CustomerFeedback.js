@@ -11,7 +11,7 @@ const CustomerFeedback = () => {
     let step = 0;
     const timer = setInterval(() => {
       if (step >= FeedbackList.length - 1) {
-        step = 0;
+        step = -1;
       }
       step += 1;
       setCurrentFeedback(FeedbackList[step]);
@@ -19,7 +19,7 @@ const CustomerFeedback = () => {
     return () => clearInterval(timer);
   }, []);
   return (
-    <section className="max-w-7xl mx-auto px-4 xl:px-0 mt-10 lg:mt-20 overflow-hidden">
+    <section className="max-w-7xl mx-auto px-2 xl:px-0 mt-10 lg:mt-20 overflow-hidden">
       <div className="flex flex-col-reverse md:flex-row items-center justify-between px-4 ">
         <div className="flex flex-col w-full md:w-1/2 mt-8 md:mt-0">
           <h2 className="text-2xl lg:text-3xl font-semibold text-[#ff8e28]">
@@ -64,13 +64,13 @@ const CustomerFeedback = () => {
               </p>
             </div>
             {/* dot section */}
-            <div className="flex items-center justify-center -bottom-12 relative">
+            <div className="flex items-center justify-center  relative flex-shrink-0">
               {FeedbackList.map((item) => (
                 <div key={item.id}>
                   {currentFeedback.id === item.id ? (
-                    <GoPrimitiveDot className="w-4 h-4 text-yellow-400" />
+                    <GoPrimitiveDot className="w-5 h-5 text-yellow-400" />
                   ) : (
-                    <GoPrimitiveDot className="w-4 h-4 text-gray-200" />
+                    <GoPrimitiveDot className="w-3 h-3 text-gray-200" />
                   )}
                 </div>
               ))}
