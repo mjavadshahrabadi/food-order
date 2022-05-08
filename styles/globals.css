@@ -12,4 +12,28 @@
   .orange__hover {
     @apply text-[#ff8e28] transition-all duration-200 ease-out cursor-pointer;
   }
+  .mobile__nav_shadow {
+    -webkit-box-shadow: 0px -18px 21px -26px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px -18px 21px -26px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px -18px 21px -26px rgba(0, 0, 0, 0.75);
+  }
+  .navbar__icon {
+    @apply w-10 h-10 rounded-full  ml-2 flex items-center justify-center cursor-pointer relative glass__bg shadow-md shadow-gray-300 border border-gray-50 hover:shadow-white transition-all duration-200 ease-out;
+  }
+  .navbar__icon-inset--shadow {
+    -webkit-box-shadow: inset 0px 3px 40px -29px rgba(176, 176, 176, 1);
+    -moz-box-shadow: inset 0px 3px 40px -29px rgba(176, 176, 176, 1);
+    box-shadow: inset 0px 3px 40px -29px rgba(176, 176, 176, 1);
+  }
+  .navbar__icon-badge {
+    @apply w-6 rounded-full h-6 bg-[#ff8e28] bg-opacity-80 absolute -top-3 -right-2 text-white flex items-center justify-center text-sm;
+  }
+  .glass__bg {
+    backdrop-filter: blur(4px) saturate(200%);
+    -webkit-backdrop-filter: blur(4px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.53);
+  }
+  .popular__food-filter {
+    @apply bg-white border border-stone-100 shadow-md py-2 text-center rounded-md text-[#383838] cursor-pointer w-40  hover:scale-95 transition-all duration-300 ease-out text-[15px] hover:shadow-[#ff8e28] hover:shadow-sm;
+  }
 }

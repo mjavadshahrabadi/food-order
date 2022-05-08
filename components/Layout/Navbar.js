@@ -1,44 +1,52 @@
+import React, { useState } from "react";
 import Image from "next/image";
 import { FaRegHeart, FaShoppingBasket, FaSearch } from "react-icons/fa";
+import MobileNav from "./MobilaNav";
 
 const Navbar = () => {
   return (
-    <nav className=" flex items-center justify-between px-14 py-6 ">
+    <nav className="flex items-center justify-between px-5 lg:px-14 xl:px-20 py-3 bg-white fixed top-0 w-full z-50 rounded-br-xl rounded-bl-xl border border-b-slate-100 shadow-md">
       <div className="flex items-center">
-        <div className="w-10 h-10 rounded-full border-2 border-white ml-2 flex items-center justify-center cursor-pointer relative">
-          <FaRegHeart className="w-5 h-5 text-white" />
-          <span className="w-6 rounded-full h-6 bg-[#ff8e28] absolute -top-3 -right-2 text-white flex items-center justify-center text-sm">
-            ۵
-          </span>
+        <div className="ml-2 navbar__icon hover:navbar__icon-inset--shadow">
+          <FaRegHeart className="w-5 h-5 text-gray-500" />
+          <span className="navbar__icon-badge">۵</span>
         </div>
-        <div className="w-10 h-10 rounded-full border-2 border-white ml-2 flex items-center justify-center cursor-pointer relative ">
-          <FaShoppingBasket className="w-5 h-5 text-white" />
-          <span className="w-6 rounded-full h-6 bg-[#ff8e28] absolute -top-3 -right-2 text-white flex items-center justify-center text-sm">
-            ۳
-          </span>
+        <div className="navbar__icon hover:navbar__icon-inset--shadow">
+          <FaShoppingBasket className="w-5 h-5 text-gray-500" />
+          <span className="navbar__icon-badge">۳</span>
         </div>
-        <div className="w-10 h-10 rounded-full border-2 border-white flex items-center justify-center cursor-pointer ">
-          <FaSearch className="w-4 h-4 text-white" />
+        <div className="navbar__icon hover:navbar__icon-inset--shadow">
+          <FaSearch className="w-4 h-4 text-gray-500" />
         </div>
       </div>
-      <ul className="flex space-x-10 text-white text-[15px]">
-        <li className="pl-10 text-[#ff8e28] font-semibold cursor-pointer">
+      <ul className="space-x-10 text-black text-[15px] hidden lg:flex">
+        <li className="ml-10 text-[#ff8e28] font-semibold cursor-pointer hover:bg-[#ff8e28] hover:bg-opacity-20 px-4 py-2 rounded-md transition-all duration-300 ease-out">
           صفحه اصلی
         </li>
-        <li className="hover:orange__hover">درباره ما</li>
-        <li className="hover:orange__hover">فروشگاه</li>
-        <li className="hover:orange__hover">بلاگ</li>
-        <li className="hover:orange__hover">تماس با ما</li>
+        <li className="hover:orange__hover hover:bg-[#ff8e28] hover:bg-opacity-20 px-4 py-2 rounded-md font-bold text-gray-500 transition-all duration-300 ease-out">
+          فروشگاه
+        </li>
+        <li className="hover:orange__hover hover:bg-[#ff8e28] hover:bg-opacity-20 px-4 py-2 rounded-md font-bold text-gray-500 transition-all duration-300 ease-out">
+          درباره ما
+        </li>
+        <li className="hover:orange__hover hover:bg-[#ff8e28] hover:bg-opacity-20 px-4 py-2 rounded-md font-bold text-gray-500 transition-all duration-300 ease-out">
+          بلاگ
+        </li>
+        <li className="hover:orange__hover hover:bg-[#ff8e28] hover:bg-opacity-20 px-4 py-2 rounded-md font-bold text-gray-500 transition-all duration-300 ease-out">
+          تماس با ما
+        </li>
       </ul>
-
-      <div className="cursor-pointer">
-        <Image
-          src="/images/logo_white-1.png"
-          alt="Webiste-Logo"
-          width={140}
-          height={37}
-        />
+      <div className="cursor-pointer flex items-center">
+        <p className="ml-4 text-sm mt-1">لوگو</p>
+        <div className="w-[48px] h-[48px] relative">
+          <Image
+            src="/images/logo_white.png"
+            alt="Webiste-Logo"
+            layout="fill"
+          />
+        </div>
       </div>
+      <MobileNav />
     </nav>
   );
 };
