@@ -36,4 +36,15 @@
   .popular__food-filter {
     @apply bg-white border border-stone-100 shadow-md py-2 text-center rounded-md text-[#383838] cursor-pointer w-40  hover:scale-95 transition-all duration-300 ease-out text-[15px] hover:shadow-[#ff8e28] hover:shadow-sm;
   }
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #ffffff;
+    border-radius: 20px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #ff8e28;
+    border-radius: 20px;
+  }
 }

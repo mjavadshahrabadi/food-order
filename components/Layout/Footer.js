@@ -1,8 +1,9 @@
 import Image from "next/image";
+import { FaInstagram, FaYoutube, FaTwitter, FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#1e1d23] mt-10 px-5 lg:px-10 py-14">
+    <footer className="bg-[#1e1d23] mt-10 py-8">
       <div className="max-w-6xl mx-auto px-4 lg:px-0">
         <div className="flex flex-col md:flex-row items-center justify-between">
           {/* top of footer */}
@@ -52,7 +53,7 @@ const Footer = () => {
               </div>
               {/* opening hour detail */}
               <div className="flex flex-col space-y-2 text-gray-300 pr-2 text-[14px]">
-                <p>شنبه تا جمعه (۱۰ تا ۲۳)</p>
+                <p>شنبه تا پنجشنبه (۱۰ تا ۲۳)</p>
                 <p>جمعه ها - تعطیل</p>
               </div>
             </div>
@@ -115,11 +116,41 @@ const Footer = () => {
                 </div>
                 {/* post title - time */}
                 <div className="flex flex-col pr-2 space-y-1">
-                  <h4>وعده های غذایی ناسالم خود را با سبزیچات جایگزین کنید.</h4>
+                  <h4>وعده های غذایی ناسالم خود را با سبزیجات جایگزین کنید.</h4>
                   <small>۱۰ ساعت پیش</small>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        <div className="w-full border-t border-gray-500 my-5" />
+        {/* scoial media link - designed by %name - website logo */}
+        <div className="flex items-center justify-between pb-20 md:pb-0">
+          <div className="flex items-center">
+            <span className=" bg-[#232228] p-2 rounded-md hover:bg-[#ff8e28] transition-all duration-300 ease-out flex items-center justify-center cursor-pointer">
+              <FaInstagram className="w-5 h-5 text-white" />
+            </span>
+            <span className="bg-[#232228] p-2 rounded-md hover:bg-[#ff8e28] transition-all duration-300 ease-out flex items-center justify-center cursor-pointer">
+              <FaYoutube className="w-5 h-5 text-white" />
+            </span>
+            <span className="bg-[#232228] p-2 rounded-md hover:bg-[#ff8e28] transition-all duration-300 ease-out flex items-center justify-center cursor-pointer">
+              <FaTwitter className="w-5 h-5 text-white" />
+            </span>
+            <span className="bg-[#232228] p-2 rounded-md hover:bg-[#ff8e28] transition-all duration-300 ease-out flex items-center justify-center cursor-pointer">
+              <FaWhatsapp className="w-5 h-5 text-white" />
+            </span>
+          </div>
+          <div>
+            <p className="text-gray-300 text-[14px] text-center hidden md:block ">
+              طراحی شده توسط محمدجواد شهرآبادی
+            </p>
+          </div>
+          <div className="w-[48px] h-[48px] relative">
+            <Image
+              src="/images/logo_white.png"
+              alt="Webiste-Logo"
+              layout="fill"
+            />
           </div>
         </div>
       </div>

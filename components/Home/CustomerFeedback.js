@@ -29,7 +29,7 @@ const CustomerFeedback = () => {
             مشتریان چه نظری درباره محصولات ما دارند ؟
           </h4>
           {/* carousel part */}
-          <div className="border border-slate-100 shadow-md shadow-orange-100 py-4 mt-5 rounded-md w-full md:w-4/5 relative">
+          <div className="border border-slate-100 shadow-md shadow-orange-100 py-4 mt-5 rounded-md w-full md:w-4/5 relative bg-white">
             {/* head */}
             <div className="flex items-center justify-between px-4">
               <p className="text-[15px] font-semibold text-gray-500">
