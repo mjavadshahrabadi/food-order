@@ -8,15 +8,15 @@ const Navbar = () => {
     <nav className="flex items-center justify-between px-5 lg:px-14 xl:px-20 py-3 bg-white fixed top-0 w-full z-50 rounded-br-xl rounded-bl-xl border border-b-slate-100 shadow-md">
       <div className="flex items-center">
         <div className="ml-2 navbar__icon hover:navbar__icon-inset--shadow">
-          <FaRegHeart className="w-5 h-5 text-gray-500" />
+          <FaRegHeart className="w-5 h-5 text-gray-600" />
           <span className="navbar__icon-badge">۵</span>
         </div>
         <div className="navbar__icon hover:navbar__icon-inset--shadow">
-          <FaShoppingBasket className="w-5 h-5 text-gray-500" />
+          <FaShoppingBasket className="w-5 h-5 text-gray-600" />
           <span className="navbar__icon-badge">۳</span>
         </div>
         <div className="navbar__icon hover:navbar__icon-inset--shadow">
-          <FaSearch className="w-4 h-4 text-gray-500" />
+          <FaSearch className="w-4 h-4 text-gray-600" />
         </div>
       </div>
       <ul className="space-x-10 text-black text-[15px] hidden lg:flex">
