@@ -47,4 +47,7 @@
     background: #ff8e28;
     border-radius: 20px;
   }
+  .active_path {
+    @apply text-[#ff8e28];
+  }
 }

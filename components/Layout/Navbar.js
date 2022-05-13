@@ -1,9 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 import { FaRegHeart, FaShoppingBasket, FaSearch } from "react-icons/fa";
 import MobileNav from "./MobilaNav";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
+  const Router = useRouter();
+
   return (
     <nav className="flex items-center justify-between px-5 lg:px-14 xl:px-20 py-3 bg-white fixed top-0 w-full z-50 rounded-br-xl rounded-bl-xl border border-b-slate-100 shadow-md">
       <div className="flex items-center">
@@ -20,21 +24,61 @@ const Navbar = () => {
         </div>
       </div>
       <ul className="space-x-10 text-black text-[15px] hidden lg:flex">
-        <li className="ml-10 text-[#ff8e28] font-semibold cursor-pointer hover:bg-[#ff8e28] hover:bg-opacity-20 px-4 py-2 rounded-md transition-all duration-300 ease-out">
-          صفحه اصلی
-        </li>
-        <li className="hover:orange__hover hover:bg-[#ff8e28] hover:bg-opacity-20 px-4 py-2 rounded-md font-bold text-gray-500 transition-all duration-300 ease-out">
-          فروشگاه
-        </li>
-        <li className="hover:orange__hover hover:bg-[#ff8e28] hover:bg-opacity-20 px-4 py-2 rounded-md font-bold text-gray-500 transition-all duration-300 ease-out">
-          درباره ما
-        </li>
-        <li className="hover:orange__hover hover:bg-[#ff8e28] hover:bg-opacity-20 px-4 py-2 rounded-md font-bold text-gray-500 transition-all duration-300 ease-out">
-          بلاگ
-        </li>
-        <li className="hover:orange__hover hover:bg-[#ff8e28] hover:bg-opacity-20 px-4 py-2 rounded-md font-bold text-gray-500 transition-all duration-300 ease-out">
-          تماس با ما
-        </li>
+        <Link href="/">
+          <li
+            className={
+              Router.asPath === "/"
+                ? "ml-10 font-semibold  px-4 py-2 rounded-md transition-all duration-300 ease-out text-[#ff8e28] cursor-pointer hover:bg-[#ff8e28] hover:bg-opacity-20"
+                : "ml-10 font-semibold  px-4 py-2 rounded-md transition-all duration-300 ease-out cursor-pointer hover:bg-[#ff8e28] hover:bg-opacity-20 hover:text-[#ff8e28] text-gray-600"
+            }
+          >
+            صفحه اصلی
+          </li>
+        </Link>
+        <Link href="/shop">
+          <li
+            className={
+              Router.asPath === "/shop"
+                ? "ml-10 font-semibold  px-4 py-2 rounded-md transition-all duration-300 ease-out text-[#ff8e28] cursor-pointer hover:bg-[#ff8e28] hover:bg-opacity-20"
+                : "ml-10 font-semibold  px-4 py-2 rounded-md transition-all duration-300 ease-out cursor-pointer hover:bg-[#ff8e28] hover:bg-opacity-20 hover:text-[#ff8e28] text-gray-600"
+            }
+          >
+            فروشگاه
+          </li>
+        </Link>
+        <Link href="/about">
+          <li
+            className={
+              Router.asPath === "/about"
+                ? "ml-10 font-semibold  px-4 py-2 rounded-md transition-all duration-300 ease-out text-[#ff8e28] cursor-pointer hover:bg-[#ff8e28] hover:bg-opacity-20"
+                : "ml-10 font-semibold  px-4 py-2 rounded-md transition-all duration-300 ease-out cursor-pointer hover:bg-[#ff8e28] hover:bg-opacity-20 hover:text-[#ff8e28] text-gray-600"
+            }
+          >
+            درباره ما
+          </li>
+        </Link>
+        <Link href="/blog">
+          <li
+            className={
+              Router.asPath === "/blog"
+                ? "ml-10 font-semibold  px-4 py-2 rounded-md transition-all duration-300 ease-out text-[#ff8e28] cursor-pointer hover:bg-[#ff8e28] hover:bg-opacity-20"
+                : "ml-10 font-semibold  px-4 py-2 rounded-md transition-all duration-300 ease-out cursor-pointer hover:bg-[#ff8e28] hover:bg-opacity-20 hover:text-[#ff8e28] text-gray-600"
+            }
+          >
+            بلاگ
+          </li>
+        </Link>
+        <Link href="/contact">
+          <li
+            className={
+              Router.asPath === "/contact"
+                ? "ml-10 font-semibold  px-4 py-2 rounded-md transition-all duration-300 ease-out text-[#ff8e28] cursor-pointer hover:bg-[#ff8e28] hover:bg-opacity-20"
+                : "ml-10 font-semibold  px-4 py-2 rounded-md transition-all duration-300 ease-out cursor-pointer hover:bg-[#ff8e28] hover:bg-opacity-20 hover:text-[#ff8e28] text-gray-600"
+            }
+          >
+            تماس با ما
+          </li>
+        </Link>
       </ul>
       <div className="cursor-pointer flex items-center">
         {/* <p className="ml-4 text-sm mt-1">لوگو</p> */}

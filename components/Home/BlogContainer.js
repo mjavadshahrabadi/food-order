@@ -4,7 +4,7 @@ import { FaRegComment } from "react-icons/fa";
 
 const BlogContainer = () => {
   return (
-    <section className="w-full mt-10 lg:mt-20 flex lg:flex-row flex-col px-6 space-y-8 md:space-y-0">
+    <section className="w-full mt-10 lg:mt-20 flex lg:flex-row flex-col px-6 space-y-8 md:space-y-0 mb-14 md:mb-20">
       {/* right blog post */}
       <div className="md:w-1/2 flex flex-col w-full space-y-4 md:space-y-0 lg:flex-row items-center">
         {/* post thumbnail */}

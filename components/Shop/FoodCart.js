@@ -7,7 +7,7 @@ const FoodCart = (props) => {
     <li className="bg-white border border-gray-100 rounded-xl shadow-md relative cursor-pointer hover:shadow-orange-200 transition-all duration-500 ease-out pt-4">
       {/* image item */}
       <div className="flex flex-col items-center">
-        <div className="w-[70%] h-[180px] relative flex ">
+        <div className="w-[65%] h-[180px] relative flex ">
           <Image src={image} alt={title} layout="fill" />
         </div>
       </div>
