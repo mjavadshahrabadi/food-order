@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const ContactHeader = () => {
   return (
-    <header className="mx-4 md:max-w-7xl md:mx-auto mt-40 mb-20 border border-gray-100 rounded-xl shadow-md py-8">
+    <header className="mx-4 md:max-w-7xl md:mx-auto mt-32 mb-20 border border-gray-100 rounded-xl shadow-md py-8 bg-white">
       <div className="flex flex-col md:flex-row items-center justify-between px-10 space-y-4 md:space-y-0">
         <div className="flex items-center border px-4 py-2 border-gray-100 shadow-md rounded-md shadow-orange-100 w-full md:w-auto justify-evenly">
           {/* icon image */}

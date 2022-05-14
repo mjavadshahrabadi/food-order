@@ -6,8 +6,10 @@ import Footer from "@/components/Layout/Footer";
 const ContactPage = () => {
   return (
     <React.Fragment>
-      <Navbar />
-      <ContactHeader />
+      <div className="bg-[#F5F4F4] border border-transparent">
+        <Navbar />
+        <ContactHeader />
+      </div>
       <Footer />
     </React.Fragment>
   );
