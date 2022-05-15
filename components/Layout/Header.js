@@ -10,7 +10,6 @@ import {
 const Header = () => {
   return (
     <header className="w-full h-[600px] lg:h-[850px] bg-[#191919] pt-16">
-      <Navbar />
       <div className="mt-10 flex flex-col-reverse lg:flex-row items-center justify-between text-center px-5 lg:px-0 relative">
         {/* right section */}
         <div className="w-1/2 hidden lg:block lg:mr-14">

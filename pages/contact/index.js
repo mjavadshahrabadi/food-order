@@ -7,7 +7,6 @@ const ContactPage = () => {
   return (
     <React.Fragment>
       <div className="bg-[#F5F4F4] border border-transparent">
-        <Navbar />
         <ContactHeader />
       </div>
       <Footer />

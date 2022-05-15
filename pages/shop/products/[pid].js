@@ -6,7 +6,6 @@ import Footer from "@/components/Layout/Footer";
 const SingleProduct = () => {
   return (
     <React.Fragment>
-      <Navbar />
       <ProductDetail />
       <Footer />
     </React.Fragment>

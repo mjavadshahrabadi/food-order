@@ -50,4 +50,11 @@
   .active_path {
     @apply text-[#ff8e28];
   }
+  .modal__middle {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  }
 }

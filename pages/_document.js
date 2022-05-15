@@ -16,6 +16,8 @@ export default function Document() {
         <link href="https://v1.fontapi.ir/css/Vazir" rel="stylesheet" />
       </Head>
       <body>
+        <div id="backdrop" />
+        <div id="modal"></div>
         <Main />
         <NextScript />
       </body>

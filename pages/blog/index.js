@@ -7,7 +7,6 @@ import Footer from "@/components/Layout/Footer";
 const BlogPage = () => {
   return (
     <React.Fragment>
-      <Navbar />
       <Main />
       <Footer />
     </React.Fragment>
